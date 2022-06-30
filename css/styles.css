@@ -1,0 +1,26 @@
+body 
+{background-color: #ffffff;
+color: #757575;
+}
+
+
+.list {list-style: none;}
+
+
+/*Header Nav*/
+.logo {color: #2196F3;}
+.header-link .header-contacts .header-contacts-list .header-nav {color:#212121 ;} /*не применились цвета*/
+
+
+
+
+/* цвет фона #FFFFFF */
+/* цвет фона вторичный #F5F4FA */
+/* цвет акцента  #2196F3 */
+/*font-femaly Roboto*/
+/*font Roboto*/
+/* font logo Raleway*/
+/* вторичный цвет текста #212121 */
+/* основной цвет текста #757575*/
+/*цвет текста лидер #FFFFFF */
+/*  акцент шрифта #2196F3 */
