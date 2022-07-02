@@ -1,18 +1,226 @@
-body 
-{background-color: #ffffff;
-color: #757575;
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --button-color: #f5f4fa;
+  --transparent-white-color: rgba(255, 255, 255, 0.6);
+  --hero-color: #2f303a;
 }
 
+body {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+}
 
-.list {list-style: none;}
+.list {
+  list-style: none;
+}
+.list .current {
+  color: var(--accent-color);
+}
 
+.hidden {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
 
 /*Header Nav*/
-.logo {color: #2196F3;}
-.header-link .header-contacts .header-contacts-list .header-nav {color:#212121 ;} /*не применились цвета*/
+.logo {
+  color: var(--accent-color);
+}
 
+.header-nav a {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.header-contacts-list a {
+  color: var(--primary-text-color);
+}
+.link {
+  text-decoration: none;
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+.header-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.header-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-contacts-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+/*main*/
 
+/*hero*/
+.hero {
+  background-color: var(--hero-color);
+}
+.hero-title {
+  color: var(--primary-white-color);
 
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/*sections*/
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.advantage-list .title,
+.team-list .title {
+  color: var(--title-text-color);
+}
+
+.portfolio-title {
+  color: var(--title-text-color);
+}
+.advantage-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantage-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 71;
+
+  letter-spacing: 0.03em;
+}
+
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+}
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+}
+/*footer*/
+.footer {
+  background-color: var(--hero-color);
+}
+
+.footer a {
+  color: var(--primary-white-color);
+}
+.footer .footer-link {
+  color: var(--transparent-white-color);
+}
+.footer-logo.footer-link {
+  color: var(--primary-white-color);
+}
+.footer-address {
+  color: var(--primary-white-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-logo.footer-link {
+  font-family: "Raleway";
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+}
+.footer-link {
+  font-style: normal;
+
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+/*button*/
+
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border: var(--accent-color);
+  font-family: "Roboto";
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  display: flex;
+  align-items: center;
+
+  letter-spacing: 0.06em;
+}
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: var(--button-color);
+  border: var(--button-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  letter-spacing: 0.03em;
+}
+
+.button.button.secondary:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.button.secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
 
 /* цвет фона #FFFFFF */
 /* цвет фона вторичный #F5F4FA */
