@@ -134,6 +134,21 @@ body {
 
   letter-spacing: 0.03em;
 }
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+
+.portfolio-product {
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.03em;
+}
 /*footer*/
 .footer {
   background-color: var(--hero-color);
@@ -177,6 +192,7 @@ body {
   line-height: 1.71;
 
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 /*button*/
 
