@@ -6,6 +6,7 @@
   --button-color: #f5f4fa;
   --transparent-white-color: rgba(255, 255, 255, 0.6);
   --hero-color: #2f303a;
+  --button-hover: #188ce8;
 }
 
 body {
@@ -87,7 +88,7 @@ body {
   text-transform: uppercase;
 }
 
-/*sections*/
+/*section*/
 
 .section-title {
   color: var(--title-text-color);
@@ -117,10 +118,12 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 71;
-
   letter-spacing: 0.03em;
 }
 
+.team {
+  background-color: var(--button-color);
+}
 .team-member {
   font-weight: 500;
   font-size: 16px;
@@ -215,6 +218,10 @@ body {
   align-items: center;
 
   letter-spacing: 0.06em;
+}
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--button-hover);
 }
 .button.secondary {
   color: var(--title-text-color);
